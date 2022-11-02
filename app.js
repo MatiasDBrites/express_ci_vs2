@@ -10,6 +10,8 @@ import AuthRouter from "./routes/auth.js";
 
 // Init express
 const app = express(); //traemos express 
+
+console.log(process.env.ENV);
 // use express json
 app.use(express.json());  //le decimos lo que vamos a usar json en nuestra api
 
@@ -35,11 +37,5 @@ try {
 // use router
 app.use(Router); //se usa el router par que se integre todos los endpoint que creamos en controlers
 app.use(AuthRouter); //importar las rutas de autorizacion
-
-//listen on port
-app.listen(3001, () => {
-  console.log('Server running on localhost:3001...')
-})
-// TERMINAR MOSTRANDO CON EL POSTMAN TODO //
 
 export default app;
