@@ -40,6 +40,6 @@ app.use(AuthRouter); //importar las rutas de autorizacion
 app.listen(3001, () => {
   console.log('Server running on localhost:3001...')
 })
-// TERMINAR MOSTRANDO CON EL POSTMAN TODO
+// TERMINAR MOSTRANDO CON EL POSTMAN TODO //
 
 export default app;
